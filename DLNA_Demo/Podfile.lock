@@ -1,0 +1,29 @@
+PODS:
+  - CocoaAsyncSocket (7.6.3)
+  - GCDWebServer (3.5.2):
+    - GCDWebServer/Core (= 3.5.2)
+  - GCDWebServer/Core (3.5.2)
+  - GCDWebServer/WebDAV (3.5.2):
+    - GCDWebServer/Core
+  - SVProgressHUD (2.2.5)
+
+DEPENDENCIES:
+  - CocoaAsyncSocket
+  - GCDWebServer (~> 3.0)
+  - GCDWebServer/WebDAV (~> 3.0)
+  - SVProgressHUD
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - CocoaAsyncSocket
+    - GCDWebServer
+    - SVProgressHUD
+
+SPEC CHECKSUMS:
+  CocoaAsyncSocket: eafaa68a7e0ec99ead0a7b35015e0bf25d2c8987
+  GCDWebServer: ead88cd14596dd4eae4f5830b8877c87c8728990
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+
+PODFILE CHECKSUM: 2f1116980e8a980d5c5c3e10153b47b51f0d4c2f
+
+COCOAPODS: 1.5.3

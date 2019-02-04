@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LocalShowVideoVC">
+            <connections>
+                <outlet property="view" destination="Yjh-JP-GqQ" id="Iuf-GV-XQ5"/>
+                <outlet property="volumeSlider" destination="Wgt-Qj-gg4" id="QuZ-gq-IX3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Yjh-JP-GqQ">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t7B-sU-pnD">
+                    <rect key="frame" x="50" y="100" width="76" height="42"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <state key="normal" title="上一个"/>
+                    <connections>
+                        <action selector="privious:" destination="-1" eventType="touchUpInside" id="gM5-LA-xvg"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UFU-9L-4bh">
+                    <rect key="frame" x="57" y="162" width="62" height="42"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <state key="normal" title="音量-"/>
+                    <connections>
+                        <action selector="volumeReduce:" destination="-1" eventType="touchUpInside" id="52t-7c-Hd8"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="17C-Ui-mzb">
+                    <rect key="frame" x="62.5" y="224" width="51" height="42"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <state key="normal" title="播放"/>
+                    <connections>
+                        <action selector="broadcast:" destination="-1" eventType="touchUpInside" id="e6z-hz-mP8"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q32-mK-1XR">
+                    <rect key="frame" x="261.5" y="286" width="51" height="42"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <state key="normal" title="快进"/>
+                    <connections>
+                        <action selector="quickGo:" destination="-1" eventType="touchUpInside" id="DCB-O1-DH3"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A5F-am-1ep">
+                    <rect key="frame" x="62.5" y="286" width="51" height="42"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <state key="normal" title="快退"/>
+                    <connections>
+                        <action selector="quickBack:" destination="-1" eventType="touchUpInside" id="enC-cL-QPK"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hSd-xb-jBc">
+                    <rect key="frame" x="249" y="348" width="76" height="42"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <state key="normal" title="不静音"/>
+                    <connections>
+                        <action selector="makeVolume:" destination="-1" eventType="touchUpInside" id="Gje-Tr-OlN"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xkF-xs-aBo">
+                    <rect key="frame" x="59.5" y="348" width="57" height="42"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <state key="normal" title="静音 "/>
+                    <connections>
+                        <action selector="noVolume:" destination="-1" eventType="touchUpInside" id="YqI-3h-rSx"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TW5-SX-UKs">
+                    <rect key="frame" x="261.5" y="224" width="51" height="42"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <state key="normal" title="暂停"/>
+                    <connections>
+                        <action selector="pause:" destination="-1" eventType="touchUpInside" id="dSQ-pC-bob"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u25-DF-cnN">
+                    <rect key="frame" x="253.5" y="162" width="67" height="42"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <state key="normal" title="音量+"/>
+                    <connections>
+                        <action selector="volumeAdd:" destination="-1" eventType="touchUpInside" id="PhQ-iM-W8v"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PcE-K8-WPH">
+                    <rect key="frame" x="249" y="100" width="76" height="42"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <state key="normal" title="下一个"/>
+                    <connections>
+                        <action selector="next:" destination="-1" eventType="touchUpInside" id="xsi-eX-fbM"/>
+                    </connections>
+                </button>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Wgt-Qj-gg4">
+                    <rect key="frame" x="48" y="517" width="279" height="31"/>
+                    <connections>
+                        <action selector="volumeSlider:" destination="-1" eventType="valueChanged" id="LjJ-e3-xgY"/>
+                    </connections>
+                </slider>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="IX7-76-AwK">
+                    <rect key="frame" x="48" y="587" width="279" height="31"/>
+                    <connections>
+                        <action selector="broadcastSlider:" destination="-1" eventType="valueChanged" id="mrn-Fe-vMS"/>
+                    </connections>
+                </slider>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="wou-Vf-3KI" firstAttribute="trailing" secondItem="PcE-K8-WPH" secondAttribute="trailing" constant="50" id="0gY-kR-1YY"/>
+                <constraint firstItem="Wgt-Qj-gg4" firstAttribute="leading" secondItem="wou-Vf-3KI" secondAttribute="leading" constant="50" id="0q7-Lz-eQz"/>
+                <constraint firstItem="UFU-9L-4bh" firstAttribute="top" secondItem="t7B-sU-pnD" secondAttribute="bottom" constant="20" id="2wG-qk-vxp"/>
+                <constraint firstItem="hSd-xb-jBc" firstAttribute="centerX" secondItem="TW5-SX-UKs" secondAttribute="centerX" id="4Y1-wL-gnE"/>
+                <constraint firstItem="IX7-76-AwK" firstAttribute="top" secondItem="Wgt-Qj-gg4" secondAttribute="bottom" constant="40" id="AHl-cy-bdU"/>
+                <constraint firstItem="UFU-9L-4bh" firstAttribute="centerX" secondItem="t7B-sU-pnD" secondAttribute="centerX" id="BK4-cA-ujV"/>
+                <constraint firstItem="17C-Ui-mzb" firstAttribute="top" secondItem="UFU-9L-4bh" secondAttribute="bottom" constant="20" id="Bhf-UA-aKR"/>
+                <constraint firstItem="IX7-76-AwK" firstAttribute="leading" secondItem="wou-Vf-3KI" secondAttribute="leading" constant="50" id="Ccd-aA-Hu1"/>
+                <constraint firstItem="wou-Vf-3KI" firstAttribute="trailing" secondItem="IX7-76-AwK" secondAttribute="trailing" constant="50" id="Gie-zV-DjK"/>
+                <constraint firstItem="t7B-sU-pnD" firstAttribute="top" secondItem="wou-Vf-3KI" secondAttribute="top" constant="80" id="Hdx-Bq-D13"/>
+                <constraint firstItem="PcE-K8-WPH" firstAttribute="centerY" secondItem="t7B-sU-pnD" secondAttribute="centerY" id="Kfd-g3-q3I"/>
+                <constraint firstItem="A5F-am-1ep" firstAttribute="top" secondItem="17C-Ui-mzb" secondAttribute="bottom" constant="20" id="NgM-tf-s13"/>
+                <constraint firstItem="u25-DF-cnN" firstAttribute="centerX" secondItem="PcE-K8-WPH" secondAttribute="centerX" id="U5Y-fV-V46"/>
+                <constraint firstItem="wou-Vf-3KI" firstAttribute="bottom" secondItem="IX7-76-AwK" secondAttribute="bottom" constant="50" id="Vvu-7X-aSn"/>
+                <constraint firstItem="xkF-xs-aBo" firstAttribute="centerX" secondItem="A5F-am-1ep" secondAttribute="centerX" id="ZhO-L9-NOR"/>
+                <constraint firstItem="hSd-xb-jBc" firstAttribute="leading" secondItem="PcE-K8-WPH" secondAttribute="leading" id="a9m-Ep-TBM"/>
+                <constraint firstItem="TW5-SX-UKs" firstAttribute="top" secondItem="u25-DF-cnN" secondAttribute="bottom" constant="20" id="aZ9-lr-v3a"/>
+                <constraint firstItem="Q32-mK-1XR" firstAttribute="top" secondItem="TW5-SX-UKs" secondAttribute="bottom" constant="20" id="hGr-Gq-0G6"/>
+                <constraint firstItem="A5F-am-1ep" firstAttribute="centerX" secondItem="17C-Ui-mzb" secondAttribute="centerX" id="hQD-Ut-EJB"/>
+                <constraint firstItem="u25-DF-cnN" firstAttribute="top" secondItem="PcE-K8-WPH" secondAttribute="bottom" constant="20" id="iGo-eD-gkC"/>
+                <constraint firstItem="wou-Vf-3KI" firstAttribute="trailing" secondItem="Wgt-Qj-gg4" secondAttribute="trailing" constant="50" id="nnV-46-THR"/>
+                <constraint firstItem="hSd-xb-jBc" firstAttribute="centerX" secondItem="Q32-mK-1XR" secondAttribute="centerX" id="oBb-p5-63m"/>
+                <constraint firstItem="xkF-xs-aBo" firstAttribute="top" secondItem="A5F-am-1ep" secondAttribute="bottom" constant="20" id="sHy-aI-kU9"/>
+                <constraint firstItem="17C-Ui-mzb" firstAttribute="centerX" secondItem="UFU-9L-4bh" secondAttribute="centerX" id="tCd-X8-rv2"/>
+                <constraint firstItem="hSd-xb-jBc" firstAttribute="top" secondItem="Q32-mK-1XR" secondAttribute="bottom" constant="20" id="tMz-BX-Vmr"/>
+                <constraint firstItem="t7B-sU-pnD" firstAttribute="leading" secondItem="wou-Vf-3KI" secondAttribute="leading" constant="50" id="weW-YU-oiM"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="wou-Vf-3KI"/>
+            <point key="canvasLocation" x="124" y="49"/>
+        </view>
+    </objects>
+</document>
